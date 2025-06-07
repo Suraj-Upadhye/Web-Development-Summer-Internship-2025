@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Using Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            height: 20vh;
+            background-color: red;
+        }
+
+        .columns {
+            display: flex;
+            height: 60vh;
+            width: 100%;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .col-1 {
+            background-color: orange;
+            height: 100%;
+            width: 100%;
+        }
+
+        .col-2 {
+            background-color: pink;
+            height: 100%;
+            width: 100%;
+        }
+
+        .col-3 {
+            background-color: green;
+            height: 100%;
+            width: 100%;
+        }
+
+        .footer {
+            height: 20vh;
+            background-color: #3434df;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="columns">
+            <div class="col-1">
+                <h2>Column 1</h2>
+            </div>
+            <div class="col-2">
+                <h2>Column 2</h2>
+
+            </div>
+            <div class="col-3">
+                <h2>Column 3</h2>
+
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+
+</html>
